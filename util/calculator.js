@@ -62,6 +62,22 @@ export const initialState = {
         return {
           currentValue: `${parseFloat(state.currentValue) * 0.01}`,
         };
+      case "pow2":
+        return {
+          currentValue: `${parseFloat(Math.pow(state.currentValue,2))}`,
+        };
+      case "sqrt":
+        return {
+          currentValue: `${parseFloat(Math.sqrt(state.currentValue))}`,
+        };
+      case "log":
+        return {
+          currentValue: `${parseFloat(Math.log10(state.currentValue))}`,
+        };
+      case "ln":
+        return {
+          currentValue: `${parseFloat(Math.LN2* Math.log2(state.currentValue))}`,
+        };
       case "sin":
         return {
           currentValue: `${parseFloat(Math.sin(state.currentValue))}`,

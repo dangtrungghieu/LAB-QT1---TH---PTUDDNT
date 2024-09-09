@@ -20,6 +20,31 @@ export default class App extends Component {
           </Text>
           <Row>
             <Button
+              text="x²"
+              theme="secondary"
+              onPress={() => this.HandleTap("pow2")}
+            />
+
+            <Button
+              text="log(x)"
+              theme="secondary"
+              onPress={() => this.HandleTap("log")}
+            />
+
+            <Button
+              text="√"
+              theme="secondary"
+              onPress={() => this.HandleTap("sqrt")}
+            />
+
+            <Button
+              text="ln"
+              theme="secondary"
+              onPress={() => this.HandleTap("ln")}
+            />
+          </Row>
+          <Row>
+            <Button
               text="Sin"
               theme="secondary"
               onPress={() => this.HandleTap("sin")}
@@ -42,6 +67,7 @@ export default class App extends Component {
               theme="secondary"
               onPress={() => this.HandleTap("cot")}
             />
+            
           </Row>
           <Row>
             <Button
